@@ -1,6 +1,6 @@
 import { Equal, Expect } from "@type-challenges/utils"
 
-type Length<T extends unknown[]> = T['length'] 
+type Length<T extends { length: number}> = T['length'] 
 
 
 type cases = [
